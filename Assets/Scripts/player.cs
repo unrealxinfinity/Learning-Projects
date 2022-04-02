@@ -8,10 +8,11 @@ public class player : MonoBehaviour
     private float moveSpeed = 7;
     private Vector2 leftBound = new Vector2(-9.5f,0);
     private Vector2 rightBound = new Vector2 (9.5f,0);
-
+   
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
+       
     }
     // Update is called once per frame
     protected void Update()
@@ -36,5 +37,18 @@ public class player : MonoBehaviour
         {
             transform.position = rightBound;
         }
+        
+
+     }
+    
     }
-}
+   
+      
+    
+
+
+
+
+
+
+
